@@ -64,7 +64,6 @@ type CurrentWeather struct {
 }
 
 func GetCurrentByZIP(ZIP int, countryCode string) CurrentWeather {
-
 	var APIKEY = os.Getenv("OWKEY")
 	baseURL := "https://api.openweathermap.org/data/2.5/weather?zip=%d,%s&appid=%s"
 	completeURL := fmt.Sprintf(baseURL, ZIP, countryCode, APIKEY)
