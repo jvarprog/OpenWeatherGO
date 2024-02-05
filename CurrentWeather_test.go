@@ -1,4 +1,4 @@
-package openweathergo
+package OpenWeatherGo
 
 import (
 	"testing"
