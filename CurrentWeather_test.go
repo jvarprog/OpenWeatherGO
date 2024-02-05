@@ -1,9 +1,9 @@
-package main
+package openweathergo
 
 import "testing"
 
 func TestCurrentWeather(t *testing.T) {
-	data := getCurrentByZIP(94040, "us") //Should get weather from Mountain View CA
+	data := GetCurrentByZIP(94040, "us") //Should get weather from Mountain View CA
 
 	if data.COD != 200 {
 		t.Errorf("Error talking to server, got code %d", data.COD)

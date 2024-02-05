@@ -1,4 +1,4 @@
-package main
+package openweathergo
 
 import (
 	"encoding/json"
@@ -63,7 +63,7 @@ type CurrentWeather struct {
 	COD        int        `json:"cod"`
 }
 
-func getCurrentByZIP(ZIP int, countryCode string) CurrentWeather {
+func GetCurrentByZIP(ZIP int, countryCode string) CurrentWeather {
 
 	var APIKEY = os.Getenv("OWKEY")
 	baseURL := "https://api.openweathermap.org/data/2.5/weather?zip=%d,%s&appid=%s"
