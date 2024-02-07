@@ -37,4 +37,5 @@ func GeocodeByZIP(ZIP int, countryCode string) Geocode {
 		log.Fatalln(err)
 	}
 	return *data
+
 }
