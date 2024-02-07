@@ -11,6 +11,6 @@ Covered API calls:
 - Geocode using city name
 
 Stuff to do
-1: Move over to One Call API
-2: Refactor code to make it more "DRY"
-3: Add better error handlings
+1. Move over to One Call API
+2. Refactor code to make it more "DRY"
+3. Add better error handlings
