@@ -88,7 +88,7 @@ func GetCurrentByZIP(ZIP int, countryCode string) CurrentWeather {
 func GetCurrentByCoords(long float32, lat float32) CurrentWeather {
 	var APIKEY = os.Getenv("OWKEY")
 	baseURL := "https://api.openweathermap.org/data/2.5/weather?lat=%v&lon=%v&appid=%v"
-	completeURL := fmt.Sprintf(baseURL, long, lat, APIKEY)
+	completeURL := fmt.Sprintf(baseURL, lat, long, APIKEY)
 
 	resp, err := http.Get(completeURL)
 	if err != nil {
