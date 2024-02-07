@@ -1,4 +1,4 @@
-package OpenWeatherGo
+package OpenWeatherGO
 
 import (
 	"fmt"

@@ -1,1 +1,1 @@
-package OpenWeatherGo
+package OpenWeatherGO
